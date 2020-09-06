@@ -21,7 +21,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if grep(/[0-9]{10}/).phone
+  result = phone.grep(/[0-9]{10}/)
+  puts result
+  
+  if phone.grep(/[0-9]{10}/)
     return true
   end
   return false
