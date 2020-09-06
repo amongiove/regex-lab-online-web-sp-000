@@ -24,7 +24,7 @@ def valid_phone_number?(phone)
   result = phone.grep(/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/)
   puts result
 
-  if phone.grep(/[0-9]{10}/)
+  if phone.grep(/^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/)
     return true
   end
   return false
